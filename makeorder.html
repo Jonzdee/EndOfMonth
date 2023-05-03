@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>End of Month food</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="main">
+
+      <dir class="logo">
+        <img src="/images/fcmb.png" alt="" >
+      </dir>
+      
+      <ul>
+        <li> <a href="index.html"  class="active">Home</a> </li>
+        <li> <a href="#">About</a> </li>
+        <li> <a href="#">Staff</a> </li>
+        <li> <a href="#">Non-Staff</a> </li>
+        <li> <a href="#">Calender</a> </li>
+        <li> <a href="#">News</a> </li>
+        <li> <a href="#">Complain</a> </li>
+        
+      </ul>
+    </div>
+    <div class="form">
+      <form name="submit-to-google-sheet">
+        <h1><span>MAKE</span> ORDER</h1>
+        <div class="input-text">
+        <input type="text" name="Username" placeholder="Username" required>
+      </div>
+      <div class="input-text">
+        <input type="number" name="ID" placeholder="Staff ID" required>
+      </div>
+      <div class="input-text">
+        <textarea name="Message" rows="4" placeholder="Write your order"></textarea>
+      </div>
+        <div class="btn1">
+          <button class="submit">Submit</button>
+        </div>
+        <span id="msg"></span>
+        
+      </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
