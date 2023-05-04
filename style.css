@@ -11,32 +11,7 @@ header{
   height: 100vh;
   min-height: 100px;
 }
-ul{
-  float: right;
-  list-style: none;
-  margin-top: 30px;
-  min-height: 400px;
-  margin-right: 40px;
-  font-size: 16px;
-}
-ul li{
-  display:inline-block;
-}
-ul li a{
-  text-decoration:none ;
-  padding: 5px 20px;
-  border: 1px solid transparent;
-  transition: 0.5 ease;
-  color: #fff;
-}
-ul li a:hover{
-  background-color: #fff;
-  color: black;
-}
-ul li .active {
-  background-color: #fff;
-  color: black;
-}
+
 .logo img{
   float: left;
   width: 80px;
@@ -131,6 +106,7 @@ color: #fff;
   color:#fff ;
   font-size: 15px;
   font-family:Arial, Helvetica, sans-serif;
+  
 }
 .btn1 button:hover{
   background: transparent;
@@ -155,3 +131,186 @@ border-radius: 50%;
     margin-top: 30px;
     display: block;
   }
+  /* start-table */
+  table{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+    width: 70%;
+    height: 50vh;
+    
+  }
+  th{
+    background:rgba(75, 54, 69, 0.25) ;
+  }
+   td:hover{
+    background: rgba(75, 54, 69, 0.25);
+  }
+  tr{
+   width: 200px; 
+  }
+  th{
+    text-align: center;
+  }
+  td, th{
+   border: 1px solid rgb(25, 25, 25);
+   padding: 10px 30px;
+  font-variant: small-caps;
+   font-size: 20px;
+  
+   
+  }
+  td th:hover{
+  background:rgb(25, 25, 25, 50%);
+  }
+/* end-table */
+
+/* content */
+
+  @media screen and (max-width:1050px) {
+    .title h1{
+      font-size: 40px;
+      padding: 0;
+    }
+    .btn{
+      border: 1px solid #fff;
+      padding: 9px 15px;
+      color: #fff;
+      transition: 0.5 ease;
+      font-size: 10px;
+      text-decoration: none;
+     display: flex;
+     margin-bottom: 10px;
+     float: left;
+    margin-left: 10px;
+     
+    }
+  }
+  @media screen and (max-width:706px) {
+    .title h1{
+      font-size: 30px;
+      
+      display: flex;
+      justify-content: start;
+      padding: auto;
+      width: 150%;
+      
+    }
+   
+    .button{
+      width: 200px;
+      border: 1px solid #fff;
+      padding: 9px 15px;
+      color: #fff;
+      transition: 0.5 ease;
+      font-size: 10px;
+      text-decoration: none;
+     display:flex;
+     margin-bottom: 10px;
+    width: 100px;
+   justify-content:space-around;
+    margin-left:10px;
+    }
+  }
+  /* ---------------------------------------- */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 80px;
+}
+nav .logo{
+    font-size: 30px;
+    color: whitesmoke;
+}
+nav b{
+    color: tomato;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0px 5px;
+    padding: 10px 12px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;    
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+nav ul li a:hover{
+    background-color: #fff;  
+    border-radius: 5px;
+    color: white;
+}
+nav .menubar i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+    
+}
+  
+  
+/** Responsive Navigation Bar Code**/
+  
+@media (max-width:940px){
+  
+    nav .menubar i{
+        display: block;
+    }
+    #click:checked ~ .menubar i:before{
+        content:"\f00d";
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -200%;
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        display:flex;
+        text-align: center;
+        transition: all 0.5s ease;
+        
+    }
+    #click:checked ~ ul{
+        left: 0;
+    }
+    nav ul li{
+        margin: 20px 0;
+    }
+    nav ul li a{
+        font-size: 18px;
+        display: block;
+        font-weight: 600;
+    }
+
+    nav ul li a:hover{
+        color: #000;
+    }
+    table{
+      width: 10px;
+      padding: 2px 5px;
+      background-color: #000;
+    }
+    
+}
+  
